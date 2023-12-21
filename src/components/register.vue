@@ -29,12 +29,19 @@
             return {
                 email: '',
                 name: '',
-                password: ''
+                password: '',
+                REGISTERLIMIT: false
             }
         },
         methods: {
             async REGISTER(e) {
                 e.preventDefault()
+
+                if (this.REGISTERLIMIT) {
+                    return
+                }
+
+                this.REGISTERLIMIT = true
                 const URL = "https://backend-binary-posts.vercel.app/account/create"
 
                 const request = await fetch(URL, {
