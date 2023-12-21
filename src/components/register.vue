@@ -62,6 +62,8 @@
                         this.email = ''
                         this.name = ''
                         this.password = ''
+
+                        location.href = "https://frontend-binary-posts.vercel.app/login"
                     } else {
                         alert(response.error)
                     }
