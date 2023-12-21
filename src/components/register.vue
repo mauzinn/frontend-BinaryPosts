@@ -35,7 +35,7 @@
         methods: {
             async REGISTER(e) {
                 e.preventDefault()
-                const URL = "http://localhost:3000/account/create"
+                const URL = "https://backend-binary-posts.vercel.app/account/create"
 
                 const request = await fetch(URL, {
                     method: 'POST',

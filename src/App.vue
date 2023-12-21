@@ -1,15 +1,15 @@
 <template>
   <router-view />
-  <openSourceButtonVue />
+  <viewProjectButtonVue />
 </template>
 
 <script>
-  import openSourceButtonVue from './components/openSourceButton.vue'
+  import viewProjectButtonVue from './components/viewProjectButton.vue'
 
   export default {
     name: 'App',
     components: {
-      openSourceButtonVue
+      viewProjectButtonVue
     }
   }
 </script>

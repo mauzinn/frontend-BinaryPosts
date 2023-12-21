@@ -64,7 +64,7 @@
                 }
             })
 
-            const URL = "http://localhost:3000/post/read"
+            const URL = "https://backend-binary-posts.vercel.app/post/read"
 
             const request = await fetch(URL, {
                 method: "POST",
@@ -94,7 +94,7 @@
                 this.SHOW_CONFIG = !this.SHOW_CONFIG
             },
             async DELETE_POST_AS_ADMIN(_id) {
-                const URL = "http://localhost:3000/post/delete"
+                const URL = "https://backend-binary-posts.vercel.app/post/delete"
 
                 const request = await fetch(URL, {
                     method: 'POST',

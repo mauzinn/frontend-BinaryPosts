@@ -6,7 +6,7 @@
     export default {
         name: 'verify',
         async created() {
-            const URL = "http://localhost:3000/account/token"
+            const URL = "https://backend-binary-posts.vercel.app/account/token"
             const token = localStorage.getItem('x-access-token')
 
             if (!token) {

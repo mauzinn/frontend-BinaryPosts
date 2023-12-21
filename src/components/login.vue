@@ -33,7 +33,7 @@
         methods: {
             async LOGIN(e) {
                 e.preventDefault()
-                const URL = "http://localhost:3000/account/login"
+                const URL = "https://backend-binary-posts.vercel.app/account/login"
 
                 const request = await fetch(URL, {
                     method: 'POST',

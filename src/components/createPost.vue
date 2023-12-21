@@ -38,7 +38,7 @@
             async POST_CREATE(e) {
                 e.preventDefault()
 
-                const URL = "http://localhost:3000/post/create"
+                const URL = "https://backend-binary-posts.vercel.app/post/create"
 
                 const formData = new FormData()
                 formData.append("title", this.title)
