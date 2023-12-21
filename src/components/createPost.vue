@@ -41,10 +41,9 @@
 
                 if (this.POSTLIMIT) {
                     return
-                } else {
-                    this.POSTLIMIT = true
                 }
-                
+
+                this.POSTLIMIT = true
                 const URL = "https://backend-binary-posts.vercel.app/post/create"
 
                 const formData = new FormData()
