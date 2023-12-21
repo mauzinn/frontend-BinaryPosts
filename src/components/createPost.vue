@@ -37,7 +37,13 @@
         methods: {
             async POST_CREATE(e) {
                 e.preventDefault()
+                let created = false
 
+                if (created) {
+                    return
+                }
+
+                created = true
                 const URL = "https://backend-binary-posts.vercel.app/post/create"
 
                 const formData = new FormData()
