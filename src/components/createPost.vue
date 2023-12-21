@@ -10,7 +10,7 @@
 
             <abbr title="Adicionar imagem a postagem">
                 <label class="file">
-                    <input type="file" class="input-file">
+                    <input type="file" class="input-file" required>
                     <span class="material-symbols-outlined">
                     image
                     </span>
@@ -73,6 +73,10 @@
     .title-configurations {
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    abbr{
+        text-decoration: none;
     }
 </style>
 
