@@ -31,20 +31,19 @@
             return {
                 title: "",
                 subtitle: "",
-                text: ""
+                text: "",
+                POSTLIMIT: false
             }
         },
         methods: {
             async POST_CREATE(e) {
                 e.preventDefault()
-                let created = false
 
-                if (created) {
+                if (this.POSTLIMIT) {
                     return
-                } else {
-                    created = true
                 }
-                
+
+                this.POSTLIMIT = true
                 const URL = "https://backend-binary-posts.vercel.app/post/create"
 
                 const formData = new FormData()
