@@ -41,9 +41,10 @@
 
                 if (created) {
                     return
+                } else {
+                    created = true
                 }
-
-                created = true
+                
                 const URL = "https://backend-binary-posts.vercel.app/post/create"
 
                 const formData = new FormData()
