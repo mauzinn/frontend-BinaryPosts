@@ -2,11 +2,11 @@
     <section class="background-post">
         <h2 class="title-configurations">Criar post</h2>
         <form class="postForm" @submit="POST_CREATE">
-            <input type="text" class="input" v-model="title" placeholder="Title" required>
+            <input type="text" class="input" maxlength="100" v-model="title" placeholder="Title" required>
 
-            <input type="text" class="input" v-model="subtitle" placeholder="Subtitle" required>
+            <input type="text" class="input" maxlength="200" v-model="subtitle" placeholder="Subtitle" required>
 
-            <textarea type="text" class="input textarea" v-model="text" placeholder="Text" required></textarea>
+            <textarea type="text" class="input textarea" maxlength="600" v-model="text" placeholder="Text" required></textarea>
 
             <abbr title="Adicionar imagem a postagem">
                 <label class="file">
