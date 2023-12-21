@@ -10,7 +10,7 @@
             const token = localStorage.getItem('x-access-token')
 
             if (!token) {
-                location.href = 'http://localhost:8080/login'
+                location.href = 'https://frontend-binary-posts.vercel.app/login'
             }
 
             const request = await fetch(URL, {
@@ -28,7 +28,7 @@
                     this.$store.commit('SET_DATA', response.data)
                 } else {
                     localStorage.removeItem('x-access-token')
-                    location.href = 'http://localhost:8080/login'
+                    location.href = 'https://frontend-binary-posts.vercel.app/login'
                 }
             })
         }

@@ -50,7 +50,7 @@
                     if (response.result) {
                         localStorage.setItem('x-access-token', response.token)
 
-                        location.href = "http://localhost:8080/"
+                        location.href = "https://frontend-binary-posts.vercel.app/"
                     } else {
                         alert(response.error)
                     }
